@@ -59,4 +59,7 @@ def subscriber():
 
         return redirect(url_for('main.blog', title=title, blogs=blogs, subscriber_form=subscriber_form))
 
+    return render_template('subscribe.html',subscriber_form=subscriber_form)   
+
+
 
