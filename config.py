@@ -9,10 +9,10 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://kakan:Abiathar2022@localhost/blog'
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY =('SECRET_KEY')
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     #  email configurations
-    MAIL_SERVER = 'smtp.googlemail.com'
+    MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 465
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
