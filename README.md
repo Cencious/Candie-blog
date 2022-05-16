@@ -9,9 +9,6 @@
 # Description
 Candie_blog is a personal blogging website where you can create and share opinions and other users can read and comment on them. Additionally, add a feature that displays random quotes to inspire users.
 
-# Live link
-https://candieblog.herokuapp.com/
-
 
 ## User story
 * As a user, I would like to view the blog posts on the site
