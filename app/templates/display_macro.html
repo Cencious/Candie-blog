@@ -1,6 +1,7 @@
 {% macro display_blogs(blogs) %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 <title>{{title}}</title>
-<div class="container-fluid" style="background-image: url(/app/static/pic1.jpg);">
+<div class="container-fluid" style="background-color: rgb(7, 39, 75);">
     <div>
         <br><br>
     </div>
@@ -12,14 +13,14 @@
 <div class="card-columns">
     {% if blogs %} {% for my_blog in blogs %}
     <div class="card">
-        <div class="card-body" style="background-color:rgb(93, 212, 192)">
+        <div class="card-body" style="background-color: aquamarine; margin-left: 10px;margin-right: 10px;">
             <p>Author: {{my_blog.title}}</p>
             <p>Blog Post: {{my_blog.post}}</p>
             <p>Date Created: {{my_blog.date_created}}</p>
 
 
         </div>
-        <div class="card-footer foot_flex d-block mx-auto" style="background-color: rgb(255, 255, 255)">
+        <div class="card-footer foot_flex d-block mx-auto" style="background-color: rgba(190, 57, 108, 0.37)">
             <a href="/comment/{{my_blog.id}}"><i class="fa fa-comment" aria-hidden="true"></i>Comment</button></a>
             <a href="/like/{{my_blog.id}}"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
                     Like {{my_blog.up_vote.count()}}</button></a>
