@@ -1,7 +1,7 @@
 ## App Name
 # Candie Blog <br>
 ****
-![Alt text](/app/static/photos/blogs.png "Optional Title")
+![Alt text](./app/static/photos/blogs.png "Optional Title")
 
 ## Author
 > Kakan Innoncencia
