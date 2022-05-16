@@ -115,6 +115,7 @@ def new_post():
 @login_required
 def comment(post_id):
     # date_created = blog.date_created.strftime('%b %d, %Y')
+    
     form = CommentForm()
     post = Post.query.get(post_id)
     user = User.query.all()
